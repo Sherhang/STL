@@ -6,7 +6,7 @@ obj = $(src:%.cpp=%.o) #get all .h with the same name of .cpp
 target = $(patsubst %.cpp, %, $(src)) #similar with the above，use this mostly 
 
 INCS = 
-LIBS =  -lpthread -ldl
+LIBS =  -lpthread 
 
 CFLAGS += -g 
 

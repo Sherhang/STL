@@ -79,4 +79,21 @@ int main()
         cout<< "从小到大排序"<<endl;
     else 
         cout<< "从大到小排序" <<endl;
+    {
+        cout<<"set的循环删除："<<endl;
+        vector<int> a={1,2,3,4,5,6,7,8,9,0};
+        set<int> nums(a.begin(), a.end());
+        display;
+        for(set<int>::iterator it = nums.begin(); it!=nums.end(); )
+        {
+            if(*it%2 ==0)
+            {
+                nums.erase(it++);
+            }
+            else
+                it++;
+            display;
+        }
+
+    }
 }

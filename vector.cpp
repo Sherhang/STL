@@ -2,10 +2,12 @@
  * vector 模板使用
  * 成员函数
  * push_back(), pop_back()
- * reserve(int n)
+ * reserve(int n),resize()
  * size(), capacity(), empty(), clear(),
  * at(int i)选定特定位置元素的引用， front(), back()
- * begin(), end()
+ * begin(), end(),rbegin(), rend()
+ * assign()
+ *      assign(iterator first, iterator last);//重新赋值，和初始化用法一样
  * insert(), clear(), erase()
  *      iterator erase(iterator it);
  *      iterator erase(iterator first, iterator second);
